@@ -38,8 +38,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -94,8 +92,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -148,8 +144,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -204,8 +198,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -260,8 +252,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -318,8 +308,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -374,8 +362,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -430,8 +416,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -486,8 +470,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -542,8 +524,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -598,8 +578,7 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
+
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -654,8 +633,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -710,8 +687,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
@@ -764,8 +739,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.ResourcesApi(panviva.ApiClient(configuration))
