@@ -13,8 +13,8 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "toolkit-python-sdk"
-VERSION = "1.0.0"
+NAME = "panviva"
+VERSION = "1.0.2"
 # To install the library, run the following
 #
 # python setup.py install
@@ -36,11 +36,11 @@ setup(
     description="A simple package provided by Panviva to help streamline integrations with Panviva APIs within Python environments.",
     author_email="support@panviva.com",
     url="https://github.com/panviva/toolkit-python-sdk",
-    keywords=["Panviva API Suite v3"],
+    keywords=["Panviva"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
     long_description="""\
-    Wouldn&#39;t it be great if you could share information seamlessly? This connector allows you to push your knowledge further and consume a complete list of Panviva&#39;s API offerings.  **Content APIs** perform resource related operations , e.g. &#x60;document&#x60;, &#x60;folder&#x60;, &#x60;file&#x60;, &#x60;container&#x60;, &#x60;image&#x60;.  **Live APIs** enable real-time communications with online users on our client application.  **Artefact APIs** interact with curated Panviva content, created by the Digital Orchestrator.  # noqa: E501
+    Wouldn't it be great if you could share information seamlessly? This connector allows you to push your knowledge further and consume a complete list of Panviva's API offerings.  **Content APIs** perform resource related operations , e.g. `document`, `folder`, `file`, `container`, `image`.  **Live APIs** enable real-time communications with online users on our client application.  **Artefact APIs** interact with curated Panviva content, created by the Digital Orchestrator.
     """
 )
