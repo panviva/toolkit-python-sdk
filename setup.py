@@ -33,10 +33,10 @@ REQUIRES = [
 setup(
     name=NAME,
     version=VERSION,
-    description="Panviva API Suite v3",
+    description="A simple package provided by Panviva to help streamline integrations with Panviva APIs within Python environments.",
     author_email="support@panviva.com",
-    url="",
-    keywords=["Swagger", "Panviva API Suite v3"],
+    url="https://github.com/panviva/toolkit-python-sdk",
+    keywords=["Panviva API Suite v3"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
