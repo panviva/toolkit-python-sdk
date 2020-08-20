@@ -10,12 +10,19 @@ Python 2.7 and 3.4+
 ## Installation & Usage
 ### pip install
 
-If the python package is hosted on Github, you can install directly from Github
+You can install via [pip](https://pypi.org/project/panviva)
+
+```sh
+pip install panviva
+```
+
+OR you can install directly from Github
 
 ```sh
 pip install git+https://github.com/panviva/toolkit-python-sdk.git
 ```
 (you may need to run `pip` with root permission: `sudo pip install git+https://github.com/panviva/toolkit-python-sdk.git`)
+
 
 Then import the package:
 ```python
@@ -50,8 +57,6 @@ from pprint import pprint
 # Configure API key authorization: apiKeyHeader
 configuration = panviva.Configuration()
 configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Ocp-Apim-Subscription-Key'] = 'Bearer'
 
 # create an instance of the API class
 api_instance = panviva.OperationsApi(panviva.ApiClient(configuration))
