@@ -10,8 +10,8 @@ Method | HTTP request | Description
 [**operations_live_search**](OperationsApi.md#operations_live_search) | **POST** /{instance}/operations/live/search | Live Search
 [**operations_search**](OperationsApi.md#operations_search) | **GET** /{instance}/operations/search | Search
 
-
 # **operations_artefact_nls**
+
 > GetSearchArtefactResponse operations_artefact_nls(instance, simplequery=simplequery, advancedquery=advancedquery, filter=filter, channel=channel, page_offset=page_offset, page_limit=page_limit, facet=facet)
 
 Search Artefacts
@@ -19,6 +19,7 @@ Search Artefacts
 Return search results for a given query
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -78,6 +79,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **operations_live_csh**
+
 > PostLiveCshResponse operations_live_csh(instance, post_live_csh_request=post_live_csh_request)
 
 Live CSH
@@ -85,6 +87,7 @@ Live CSH
 Present a CSH search result page of the passing query on Panviva client to specified user on Panviva client
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -113,8 +116,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instance** | **str**| The instance name as shown on the Panviva Developer Portal. | 
- **post_live_csh_request** | [**PostLiveCshRequest**](PostLiveCshRequest.md)| JSON object containing information required to perform a live activity&lt;span&gt;:&lt;/span&gt; | [optional] 
+ **instance** | **str**| The instance name as shown on the Panviva Developer Portal. |
+ **post_live_csh_request** | [**PostLiveCshRequest**](PostLiveCshRequest.md)| JSON object containing information required to perform a live activity&lt;span&gt;:&lt;/span&gt; | [optional]
 
 ### Return type
 
@@ -126,12 +129,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **operations_live_document**
+
 > PostLiveDocumentResponse operations_live_document(instance, post_live_document_request=post_live_document_request)
 
 Live Document
@@ -139,6 +143,7 @@ Live Document
 Present a document page to specified user on Panviva client
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -180,12 +185,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **operations_live_search**
+
 > PostLiveSearchResponse operations_live_search(instance, post_live_search_request=post_live_search_request)
 
 Live Search
@@ -193,6 +199,7 @@ Live Search
 Present a search result page of the passing query on Panviva client to specified user on Panviva client
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -234,12 +241,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **operations_search**
+
 > GetSearchResponse operations_search(instance, term, page_offset=page_offset, page_limit=page_limit)
 
 Search
@@ -247,6 +255,7 @@ Search
 Searches documents, folders, and files (external documents) for a term and returns paginated results
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -277,10 +286,10 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instance** | **str**| The instance name as shown on the Panviva Developer Portal. | 
- **term** | **str**| The word or phrase to be searched for | 
- **page_offset** | **int**| The pagination offset to denote the number of initial search results to skip. For example, pageOffset of 100 and pageLimit of 10 would return records 101-110. | [optional] 
- **page_limit** | **int**| The number of records to return. Must be an integer between 0 and 1000. | [optional] 
+ **instance** | **str**| The instance name as shown on the Panviva Developer Portal. |
+ **term** | **str**| The word or phrase to be searched for |
+ **page_offset** | **int**| The pagination offset to denote the number of initial search results to skip. For example, pageOffset of 100 and pageLimit of 10 would return records 101-110. | [optional]
+ **page_limit** | **int**| The number of records to return. Must be an integer between 0 and 1000. | [optional]
 
 ### Return type
 
@@ -292,8 +301,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

@@ -21,6 +21,7 @@ Method | HTTP request | Description
 
 
 # **resources_artefact_by_id**
+
 > GetResponseResponse resources_artefact_by_id(instance, id)
 
 Artefact
@@ -28,6 +29,7 @@ Artefact
 Return an artefact using the ID provided
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -69,12 +71,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_artefact_categories_get**
+
 > GetArtefactCategoriesResponse resources_artefact_categories_get(instance)
 
 Get Artefact Categories
@@ -82,6 +85,7 @@ Get Artefact Categories
 Gets a list of all available artefact categories
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -121,12 +125,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_artefact_category_post**
+
 > PostArtefactCategoryResponse resources_artefact_category_post(instance, post_artefact_category_request=post_artefact_category_request)
 
 Create Artefact Category
@@ -134,6 +139,7 @@ Create Artefact Category
 Creates a category for classifying artefacts
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -162,8 +168,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instance** | **str**| The instance name as shown on the Panviva Developer Portal. | 
- **post_artefact_category_request** | [**PostArtefactCategoryRequest**](PostArtefactCategoryRequest.md)| JSON object containing the category name | [optional] 
+ **instance** | **str**| The instance name as shown on the Panviva Developer Portal. |
+ **post_artefact_category_request** | [**PostArtefactCategoryRequest**](PostArtefactCategoryRequest.md)| JSON object containing the category name | [optional]
 
 ### Return type
 
@@ -175,12 +181,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_container_by_id**
+
 > GetContainerResponse resources_container_by_id(instance, id)
 
 Container
@@ -188,6 +195,7 @@ Container
 Return a container using the container ID provided
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -229,12 +237,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_document_by_id**
+
 > GetDocumentResponse resources_document_by_id(instance, id, version=version)
 
 Document
@@ -242,6 +251,7 @@ Document
 Return a document using the document ID provided
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -271,9 +281,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instance** | **str**| The instance name as shown on the Panviva Developer Portal. | 
- **id** | **str**| A document unique identifier, Document ID. If a document is a translated document, this value represents Internal ID or IID in Panviva API v1. | 
- **version** | **int**| Request the API to return a particular version of the specified document. | [optional] 
+ **instance** | **str**| The instance name as shown on the Panviva Developer Portal. |
+ **id** | **str**| A document unique identifier, Document ID. If a document is a translated document, this value represents Internal ID or IID in Panviva API v1. |
+ **version** | **int**| Request the API to return a particular version of the specified document. | [optional]
 
 ### Return type
 
@@ -291,6 +301,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_document_by_id_containers**
+
 > GetDocumentContainersResponse resources_document_by_id_containers(instance, id)
 
 Document Containers
@@ -298,6 +309,7 @@ Document Containers
 Return a list of containers using the document ID provided
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -326,8 +338,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instance** | **str**| The instance name as shown on the Panviva Developer Portal. | 
- **id** | **int**| The internal id (IID) of a Panviva document | 
+ **instance** | **str**| The instance name as shown on the Panviva Developer Portal. |
+ **id** | **int**| The internal id (IID) of a Panviva document |
 
 ### Return type
 
@@ -339,12 +351,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_document_by_id_containers_relationships**
+
 > GetDocumentContainerRelationshipsResponse resources_document_by_id_containers_relationships(instance, id)
 
 Document Container Relationships
@@ -352,6 +365,7 @@ Document Container Relationships
 Return a list of the parent-child relationship between each container for the document ID provided
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -393,12 +407,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_document_by_id_translations**
+
 > GetDocumentTranslationsResponse resources_document_by_id_translations(instance, id)
 
 Document Translations
@@ -406,6 +421,7 @@ Document Translations
 Return a list of all translations (per language and locale) of a Panviva document
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -447,12 +463,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_file_by_id**
+
 > GetFileResponse resources_file_by_id(instance, id)
 
 File
@@ -460,6 +477,7 @@ File
 Returns a file (external document) from Panviva
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -501,12 +519,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_folder_by_id**
+
 > GetFolderResponse resources_folder_by_id(instance, id)
 
 Folder
@@ -514,6 +533,7 @@ Folder
 Return information about a Panviva folder and references to each of its direct children
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -555,12 +575,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_folder_by_id_children**
+
 > GetFolderChildrenResponse resources_folder_by_id_children(instance, id)
 
 Folder Children
@@ -568,6 +589,7 @@ Folder Children
 Gets all the immediate children of a Panviva folder, not including grandchildren. Children can be folders, documents, or files (external documents)
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -597,8 +619,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instance** | **str**| The instance name as shown on the Panviva Developer Portal. | 
- **id** | **int**| The internal id (IID) of a Panviva folder | 
+ **instance** | **str**| The instance name as shown on the Panviva Developer Portal. |
+ **id** | **int**| The internal id (IID) of a Panviva folder |
 
 ### Return type
 
@@ -610,12 +632,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_folder_by_id_translations**
+
 > GetFolderTranslationsResponse resources_folder_by_id_translations(instance, id)
 
 Folder Translations
@@ -623,6 +646,7 @@ Folder Translations
 Gets all the translations of a Panviva folder, along with each translated folders respective children
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -664,12 +688,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_folder_root**
+
 > GetFolderRootResponse resources_folder_root(instance)
 
 Folder Root
@@ -677,6 +702,7 @@ Folder Root
 Gets the root/home folder in all of Panviva, which can be drilled into using the Get Folder Children endpoint. Note this endpoint was formerly referred to as the 'Folder Search' endpoint
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -716,12 +742,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **resources_image_by_id**
+
 > GetImageResponse resources_image_by_id(instance, id)
 
 Image
@@ -729,6 +756,7 @@ Image
 Returns an image from Panviva. Image data is represented as a base64 string
 
 ### Example
+
 ```python
 from __future__ import print_function
 import time
@@ -757,8 +785,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **instance** | **str**| The instance name as shown on the Panviva Developer Portal. | 
- **id** | **int**| The id of a Panviva image | 
+ **instance** | **str**| The instance name as shown on the Panviva Developer Portal. |
+ **id** | **int**| The id of a Panviva image |
 
 ### Return type
 
@@ -770,8 +798,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
