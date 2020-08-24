@@ -107,31 +107,52 @@ except ApiException as e:
 
 ```
 
+## Configuration
+
+There are additional configurations available, that may be helpful for you:
+
+```python
+configuration = panviva.Configuration()
+configuration.api_key['Ocp-Apim-Subscription-Key'] = 'YOUR_API_KEY'
+configuration.debug = True # Debug level logging (Default: False)
+
+configuration.logger_format = '%(asctime)s %(levelname)s %(message)s'
+configuration.logger_stream_handler = None # Log stream handler (Default: None)
+
+# Log with into file
+configuration.logger_file = "/var/log/panviva-sdk.log" # File path to log to (Default: None)
+configuration.logger_file_handler = None # Logger file handler for customization (Default: None)
+
+configuration.proxy = "https://myproxy.com" # Proxy server URL you wish to send your request through(Default: None)
+
+api_instance = panviva.OperationsApi(panviva.ApiClient(configuration))
+```
+
 ## Documentation for API Endpoints
 
 All URIs are relative to *https://api.panviva.com/v3*
 
-Description |Class | Method | HTTP request
+Description | Method | HTTP request | Class
 ------------ | ------------- | ------------- | -------------
-Search Artefacts |*OperationsApi* | [**operations_artefact_nls**](docs/OperationsApi.md#operations_artefact_nls) | **GET** /{instance}/operations/artefact/nls
-Live CSH |*OperationsApi* | [**operations_live_csh**](docs/OperationsApi.md#operations_live_csh) | **POST** /{instance}/operations/live/csh
-Live Document |*OperationsApi* | [**operations_live_document**](docs/OperationsApi.md#operations_live_document) | **POST** /{instance}/operations/live/document
-Live Search |*OperationsApi* | [**operations_live_search**](docs/OperationsApi.md#operations_live_search) | **POST** /{instance}/operations/live/search
-Search Documents |*OperationsApi* | [**operations_search**](docs/OperationsApi.md#operations_search) | **GET** /{instance}/operations/search
-Get Artefacts |*ResourcesApi* | [**resources_artefact_by_id**](docs/ResourcesApi.md#resources_artefact_by_id) | **GET** /{instance}/resources/artefact/{id}
-Get Artefact Categories |*ResourcesApi* | [**resources_artefact_categories_get**](docs/ResourcesApi.md#resources_artefact_categories_get) | **GET** /{instance}/resources/artefactcategory
-Create Artefact Category |*ResourcesApi* | [**resources_artefact_category_post**](docs/ResourcesApi.md#resources_artefact_category_post) | **POST** /{instance}/resources/artefactcategory
-Container |*ResourcesApi* | [**resources_container_by_id**](docs/ResourcesApi.md#resources_container_by_id) | **GET** /{instance}/resources/container/{id}
-Document |*ResourcesApi* | [**resources_document_by_id**](docs/ResourcesApi.md#resources_document_by_id) | **GET** /{instance}/resources/document/{id}
-Document Containers |*ResourcesApi* | [**resources_document_by_id_containers**](docs/ResourcesApi.md#resources_document_by_id_containers) | **GET** /{instance}/resources/document/{id}/containers
-Document Container Relationships |*ResourcesApi* | [**resources_document_by_id_containers_relationships**](docs/ResourcesApi.md#resources_document_by_id_containers_relationships) | **GET** /{instance}/resources/document/{id}/containers/relationships
-Document Translations |*ResourcesApi* | [**resources_document_by_id_translations**](docs/ResourcesApi.md#resources_document_by_id_translations) | **GET** /{instance}/resources/document/{id}/translations
-File |*ResourcesApi* | [**resources_file_by_id**](docs/ResourcesApi.md#resources_file_by_id) | **GET** /{instance}/resources/file/{id}
-Folder |*ResourcesApi* | [**resources_folder_by_id**](docs/ResourcesApi.md#resources_folder_by_id) | **GET** /{instance}/resources/folder/{id}
-Folder Children |*ResourcesApi* | [**resources_folder_by_id_children**](docs/ResourcesApi.md#resources_folder_by_id_children) | **GET** /{instance}/resources/folder/{id}/children
-Folder Translations |*ResourcesApi* | [**resources_folder_by_id_translations**](docs/ResourcesApi.md#resources_folder_by_id_translations) | **GET** /{instance}/resources/folder/{id}/translations
-Folder Root |*ResourcesApi* | [**resources_folder_root**](docs/ResourcesApi.md#resources_folder_root) | **GET** /{instance}/resources/folder/root
-Image |*ResourcesApi* | [**resources_image_by_id**](docs/ResourcesApi.md#resources_image_by_id) | **GET** /{instance}/resources/image/{id}
+Search Artefacts | [**operations_artefact_nls**](docs/OperationsApi.md#operations_artefact_nls) | **GET** /{instance}/operations/artefact/nls | *OperationsApi*
+Live CSH | [**operations_live_csh**](docs/OperationsApi.md#operations_live_csh) | **POST** /{instance}/operations/live/csh | *OperationsApi*
+Live Document | [**operations_live_document**](docs/OperationsApi.md#operations_live_document) | **POST** /{instance}/operations/live/document | *OperationsApi*
+Live Search | [**operations_live_search**](docs/OperationsApi.md#operations_live_search) | **POST** /{instance}/operations/live/search | *OperationsApi*
+Search Documents | [**operations_search**](docs/OperationsApi.md#operations_search) | **GET** /{instance}/operations/search | *OperationsApi*
+Get Artefacts | [**resources_artefact_by_id**](docs/ResourcesApi.md#resources_artefact_by_id) | **GET** /{instance}/resources/artefact/{id} |*ResourcesApi*
+Get Artefact Categories | [**resources_artefact_categories_get**](docs/ResourcesApi.md#resources_artefact_categories_get) | **GET** /{instance}/resources/artefactcategory |*ResourcesApi*
+Create Artefact Category | [**resources_artefact_category_post**](docs/ResourcesApi.md#resources_artefact_category_post) | **POST** /{instance}/resources/artefactcategory |*ResourcesApi*
+Container | [**resources_container_by_id**](docs/ResourcesApi.md#resources_container_by_id) | **GET** /{instance}/resources/container/{id} |*ResourcesApi*
+Document | [**resources_document_by_id**](docs/ResourcesApi.md#resources_document_by_id) | **GET** /{instance}/resources/document/{id} |*ResourcesApi*
+Document Containers | [**resources_document_by_id_containers**](docs/ResourcesApi.md#resources_document_by_id_containers) | **GET** /{instance}/resources/document/{id}/containers |*ResourcesApi*
+Document Container Relationships | [**resources_document_by_id_containers_relationships**](docs/ResourcesApi.md#resources_document_by_id_containers_relationships) | **GET** /{instance}/resources/document/{id}/containers/relationships |*ResourcesApi*
+Document Translations | [**resources_document_by_id_translations**](docs/ResourcesApi.md#resources_document_by_id_translations) | **GET** /{instance}/resources/document/{id}/translations |*ResourcesApi*
+File | [**resources_file_by_id**](docs/ResourcesApi.md#resources_file_by_id) | **GET** /{instance}/resources/file/{id} |*ResourcesApi*
+Folder | [**resources_folder_by_id**](docs/ResourcesApi.md#resources_folder_by_id) | **GET** /{instance}/resources/folder/{id} |*ResourcesApi*
+Folder Children | [**resources_folder_by_id_children**](docs/ResourcesApi.md#resources_folder_by_id_children) | **GET** /{instance}/resources/folder/{id}/children |*ResourcesApi*
+Folder Translations | [**resources_folder_by_id_translations**](docs/ResourcesApi.md#resources_folder_by_id_translations) | **GET** /{instance}/resources/folder/{id}/translations |*ResourcesApi*
+Folder Root | [**resources_folder_root**](docs/ResourcesApi.md#resources_folder_root) | **GET** /{instance}/resources/folder/root |*ResourcesApi*
+Image | [**resources_image_by_id**](docs/ResourcesApi.md#resources_image_by_id) | **GET** /{instance}/resources/image/{id} |*ResourcesApi*
 
 ## Documentation For Models
 
